@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Course Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">This data is collected for studying about the courses that most students take</p>
+    <div>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name: <input placeholder="Enter your name" type="text" id="name" required /></label>
+        <label id="email-label" for="email">Email: <input placeholder="Enter your email id" type="email" id="email" required /></label>
+        <label id="number-label" for="number">Age: <input placeholder="Enter your age" type="number" id="number" required min="5" max="120" ></label>
+        <label>What brach are you studying:
+          <select id="dropdown">
+            <option> Choose your branch </option>
+            <option> CSE </option>
+            <option> CSE(AI) </option>
+            <option> ECE </option>
+            <option> EEE </option>
+            <option> CE </option>
+            <option> Other </option>
+          </select>
+        </label>
+
+        <fieldset>
+          <legend>Which year are you currently enrolled</legend>
+          <label><input value="first" type="radio" name="year"/> First</label>
+          <label><input value="second" type="radio" name="year"/> Second</label>
+          <label><input value="third" type="radio" name="year"/> Third</label>
+          <label><input value="fourth" type="radio" name="year"/> Fourth</label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            What are your favorate sports among these
+          </legend>
+          <label><input type="checkbox" value="1"> Football</label>
+          <label><input type="checkbox" value="2"> Cricket</label>
+          <label><input type="checkbox" value="3"> Rugby</label>
+          <label><input type="checkbox" value="4"> Other</label>
+        </fieldset>
+        <label>Give a short feedback about your college <textarea placeholder="I like environment" id="textarea"></textarea></label>
+        <label><input type="submit" id="submit"></label>
+      </form>
+    </div>
+  </body>
+</html>
